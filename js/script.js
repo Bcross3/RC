@@ -58,6 +58,7 @@ function loadIn() {
 }
 
 $(document).ready(function() {
+	window.alert("Links don't function on this site.");
 	
 	imgChange();
 	setInterval(imgChange, 18000); 

@@ -1,0 +1,104 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+body {
+	background-color: wheat;
+	text-align: center;
+}
+.Top {
+	background-color: white;
+	background-image: url('../images/logo.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 20%;
+	width: auto;
+	margin-left: .5%;
+	margin-right: .5%;
+	margin-top: .2%;
+	border: outset;
+	color: forestgreen;
+	box-shadow: 0px 5px 5px black;
+	cursor: pointer;
+}
+.Top:hover {
+	transition: .5s;
+	border-color: red;
+}
+
+.Main {
+	background-image: linear-gradient(forestgreen, white);
+	border: outset;
+	border-color: white;
+	box-shadow: 10px 10px 10px black;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 1.5%;
+	margin-bottom: 2%;
+	border-radius: 10px;
+}
+.Main h1{
+	text-align: center;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+	margin-top: 2%;
+	font-size: 2.5em;
+}
+.Main hr {
+	height: .5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: black;
+	margin-bottom: 2.5%;
+}
+nav {
+	background-image: linear-gradient(wheat, wheat, wheat, white);
+	border: inset;
+	border-color: black;
+	text-align: center;
+	font-size: 1.5em;
+	margin-left: 20%;
+	margin-right: 20%;
+	word-spacing: 50px;
+	line-height: 200%;
+}
+ul {
+	list-style-type: none;
+}
+li {
+	display: inline;
+}
+a {
+	text-decoration: none;
+	color: wheat;
+	background-color: forestgreen;
+	border-radius: 10px;
+	padding-left: 1%;
+	padding-right: 1%;
+	font-size: 1.5em;
+	box-shadow: 5px 5px 5px black;
+}
+a:hover {
+	transition: .5s;
+	color: red;
+	background-color: black;
+}
+.Main img{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border: solid;
+	border-color: black;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px black;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+footer p{
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}

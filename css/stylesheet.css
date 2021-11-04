@@ -53,13 +53,7 @@ body {
 	margin-bottom: 2.5%;
 }
 nav {
-	background-image: linear-gradient(wheat, wheat, wheat, white);
-	border: inset;
-	border-color: black;
 	text-align: center;
-	font-size: 1.5em;
-	margin-left: 20%;
-	margin-right: 20%;
 	word-spacing: 50px;
 	line-height: 200%;
 }
@@ -71,8 +65,8 @@ li {
 }
 a {
 	text-decoration: none;
-	color: wheat;
-	background-color: forestgreen;
+	color: forestgreen;
+	background-color: wheat;
 	border-radius: 10px;
 	padding-left: 1%;
 	padding-right: 1%;
@@ -81,8 +75,8 @@ a {
 }
 a:hover {
 	transition: .5s;
-	color: red;
-	background-color: black;
+	color: black;
+	background-color: red;
 }
 .Main img{
 	margin-top: 2%;

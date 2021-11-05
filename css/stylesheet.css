@@ -89,8 +89,8 @@ li {
 }
 .link:hover {
 	transition: .2s !important;
-	color: red !important;
-	background-color: black !important;
+	/*color: red !important;
+	background-color: black !important*/;
 }
 .Main img{
 	margin-top: 2%;

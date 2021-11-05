@@ -73,10 +73,111 @@ function jokes() {
 	window.alert(joke[index]);
 }
 
+function anti() {
+	document.body.style.backgroundColor = "white";
+	document.body.style.borderColor = "red";
+	
+	$('#Main').fadeTo(1000, 0.0, function() {
+		document.getElementById('Main').style.background = "black";
+		document.getElementById('Main').style.borderColor = "red";
+		
+		document.getElementById('Head').style.color = "red";
+		document.getElementById('Head').style.textShadow = "2.5px 2.5px 25px white";
+		
+		document.getElementById('weatherwidget-io').style.borderColor = "red";
+		
+		document.getElementById('travelCenter').style.borderColor = "red";
+		
+		document.getElementById('anti').style.display = "none";
+		document.getElementById('normal').style.display = "initial";
+		
+		var links = document.querySelectorAll('.link');
+		var i;
+		for(i = 0; i < links.length; i++){
+			links[i].style.backgroundColor = "red";
+			links[i].style.color = "black";
+		}
+		
+		var hr = document.querySelectorAll('HR');
+		var a;
+		for(a = 0; a < hr.length; a++){
+			hr[a].style.backgroundColor = "red";
+		}
+	});
+	$('#Main').fadeTo(1000, 1);
+	
+	$('.Top').fadeTo(1000, 0.0, function() {
+		document.getElementById('Top').style.backgroundColor = "black";
+		document.getElementById('Top').style.borderColor = "red";
+	});
+	$('.Top').fadeTo(1000, 1);
+}
+
+function normal() {
+	document.body.style.backgroundColor = "wheat";
+	document.body.style.borderColor = "wheat";
+	
+	$('#Main').fadeTo(1000, 0.0, function() {
+		document.getElementById('Main').style.background = "linear-gradient(to bottom right, forestgreen, white)";
+		document.getElementById('Main').style.borderColor = "white";
+		
+		document.getElementById('Head').style.color = "white";
+		document.getElementById('Head').style.textShadow = "5px 5px 5px black";
+		
+		document.getElementById('weatherwidget-io').style.borderColor = "black";
+		
+		document.getElementById('travelCenter').style.borderColor = "black";
+		
+		document.getElementById('anti').style.display = "initial";
+		document.getElementById('normal').style.display = "none";
+		
+		var links = document.querySelectorAll('.link');
+		var i;
+		for(i = 0; i < links.length; i++){
+			links[i].style.backgroundColor = "wheat";
+			links[i].style.color = "forestgreen";
+		}
+		
+		var hr = document.querySelectorAll('HR');
+		var a;
+		for(a = 0; a < hr.length; a++){
+			hr[a].style.backgroundColor = "black";
+		}
+		
+	});
+	$('#Main').fadeTo(1000, 1);
+	
+	$('.Top').fadeTo(1000, 0.0, function() {
+		document.getElementById('Top').style.backgroundColor = "white";
+		document.getElementById('Top').style.borderColor = "forestgreen";
+	});
+	$('.Top').fadeTo(1000, 1);
+}
+
+function weather() {
+	document.getElementById('weatherwidget-io').style.display = 'block';
+	
+	document.getElementById('weather').style.display = "none";
+	document.getElementById('noWeather').style.display = "initial";
+}
+
+function noWeather() {
+	document.getElementById('weatherwidget-io').style.display = "none";
+	
+	document.getElementById('weather').style.display = "initial";
+	document.getElementById('noWeather').style.display = "none";
+}
+
+function fadeIn() {
+	$('.Main').fadeTo(1000, 1);
+}
+
 $(document).ready(function() {
 	
 	imgChange();
 	setInterval(imgChange, 18000); 
 	
 	setInterval(footColor, 600);
+	
+	fadeIn();
 });

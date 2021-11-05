@@ -10,17 +10,20 @@
 		<script src="js/script.js"></script>
 	</head>
 	<body>
-		<div class="Top" onclick="window.open('https://rivercountrycoop.com/')"></div>
+		<div id="Top" class="Top" onclick="window.open('https://rivercountrycoop.com/')"></div>
 		
 		<div id="Main" class="Main">
-			<h1>Eau Claire Travel Center</h1>
+			<h1 id="Head">Eau Claire Travel Center</h1>
 			<hr>
 			<nav>
 				<ul>
-					<li><a id="link" href="" target="_blank">Punch-In</a></li>
-					<li><a id="link" href="" target="_blank">Plates</a></li>
-					<li><a id="link" style="cursor: pointer;"onclick="document.getElementById('weatherwidget-io').style.display = 'block';">Weather</a></li>
-					<li><a id="link" style="cursor: pointer;" onclick="jokes();">Joke</a></li>
+					<li><a class="link" href="" target="_blank">Punch-In</a></li>
+					<li><a class="link" href="" target="_blank">Plates</a></li>
+					<li><a class="link" id="weather" style="cursor: pointer;"onclick="weather();">Weather</a></li>
+					<li><a class="link" id="noWeather" style="cursor: pointer; display: none;" onclick="noWeather();">No-Weather</a></li>
+					<li><a class="link" style="cursor: pointer;" onclick="jokes();">Joke</a></li>
+					<li><a class="link" id="anti" style="cursor: pointer;" onclick="anti();">Anti-Theme</a></li>
+					<li><a class="link" id="normal" style="cursor: pointer; display: none;" onclick="normal();">Regular</a></li>
 				</ul>
 			</nav>
 			<hr>

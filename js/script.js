@@ -109,6 +109,7 @@ function anti() {
 	$('.Top').fadeTo(1000, 0.0, function() {
 		document.getElementById('Top').style.backgroundColor = "black";
 		document.getElementById('Top').style.borderColor = "red";
+		document.getElementById('Top').style.filter = "blur(1.2px)";
 	});
 	$('.Top').fadeTo(1000, 1);
 }
@@ -150,6 +151,7 @@ function normal() {
 	$('.Top').fadeTo(1000, 0.0, function() {
 		document.getElementById('Top').style.backgroundColor = "white";
 		document.getElementById('Top').style.borderColor = "forestgreen";
+		document.getElementById('Top').style.filter = "blur(.8px)";
 	});
 	$('.Top').fadeTo(1000, 1);
 }

@@ -12,7 +12,6 @@ body {
 }
 .Top {
 	background-color: white;
-	background-image: url('../images/logo.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 20%;
@@ -23,13 +22,18 @@ body {
 	border: outset;
 	color: forestgreen;
 	box-shadow: 0px 5px 5px black;
-	cursor: pointer;
-	filter: blur(0.5px);
 }
 .Top:hover {
 	transition: .5s;
 	border-color: red !important;
-	filter: blur(2px);;
+}
+.Top img {
+	filter: blue(.8px);
+	cursor: pointer;
+}
+.Top img:hover {
+	transition: .5s;
+	filter: blur(2px) !important;
 }
 
 .Main {

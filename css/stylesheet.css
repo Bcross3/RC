@@ -35,7 +35,7 @@ body {
 }
 .Top img:hover {
 	transition: .5s;
-	filter: blur(2px) !important;
+	filter: blur(2px) grayscale(100%) !important;
 }
 
 .Main {

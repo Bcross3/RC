@@ -99,8 +99,9 @@ li {
 }
 footer p{
 	cursor: pointer;
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
+	border: solid;
 	position: fixed;
 	bottom: 0;
 	right: 5;

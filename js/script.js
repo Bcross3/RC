@@ -120,6 +120,11 @@ function anti() {
 	});
 	$('.Top').fadeTo(1000, 1);
 	
+	$('#me').fadeTo(1000, 0.0, function() {
+		document.getElementById('me').style.backgroundColor = "black";
+	})
+	$('#me').fadeTo(1000, 1);
+	
 	mseOver = elem => elem.style.color = "forestgreen";
 	mseOverBody = elem => elem.style.backgroundColor = "wheat";
 	mseOut = elem => elem.style.color = "black";
@@ -169,6 +174,11 @@ function normal() {
 		document.getElementById('Top').style.filter = "blur(.55px) grayscale(0)";
 	});
 	$('.Top').fadeTo(1000, 1);
+	
+	$('#me').fadeTo(1000, 0.0, function() {
+		document.getElementById('me').style.backgroundColor = "white";
+	});
+	$('#me').fadeTo(1000, 1);
 	
 	mseOver = elem => elem.style.color = "black";
 	mseOverBody = elem => elem.style.backgroundColor = "red";

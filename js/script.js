@@ -25,46 +25,46 @@ function footColor() {
 function imgChange() {
 	
 	setTimeout(function() {
-		$('#travelCenter').fadeTo(1000, 0.0, function() {
+		$('#travelCenter').fadeTo(1500, 0.0, function() {
 			document.getElementById('travelCenter').src = "./images/img1.jpg";
 		});
-		$('#travelCenter').fadeTo(1000, 1);
+		$('#travelCenter').fadeTo(1500, 1);
 		
 		setTimeout(function() {
-			$('#travelCenter').fadeTo(1000, 0.0, function() {
+			$('#travelCenter').fadeTo(1500, 0.0, function() {
 				document.getElementById('travelCenter').src = "./images/img2.jpg";
 			});
-			$('#travelCenter').fadeTo(1000, 1);
+			$('#travelCenter').fadeTo(1500, 1);
 			
 			setTimeout(function() {
-				$('#travelCenter').fadeTo(1000, 0.0, function() {
+				$('#travelCenter').fadeTo(1500, 0.0, function() {
 					document.getElementById('travelCenter').src = "./images/img3.jpg";
 				});
-				$('#travelCenter').fadeTo(1000, 1);
+				$('#travelCenter').fadeTo(1500, 1);
 				
 				setTimeout(function() {
-					$('#travelCenter').fadeTo(1000, 0.0, function() {
+					$('#travelCenter').fadeTo(1500, 0.0, function() {
 						document.getElementById('travelCenter').src = "./images/img4.jpg";
 					});
-					$('#travelCenter').fadeTo(1000, 1);
+					$('#travelCenter').fadeTo(1500, 1);
 					
 					setTimeout(function() {
-						$('#travelCenter').fadeTo(1000, 0.0, function() {
+						$('#travelCenter').fadeTo(1500, 0.0, function() {
 							document.getElementById('travelCenter').src = "./images/img5.jpg";
 						});
-						$('#travelCenter').fadeTo(1000, 1);
+						$('#travelCenter').fadeTo(1500, 1);
 						
 						setTimeout(function() {
-							$('#travelCenter').fadeTo(1000, 0.0, function() {
+							$('#travelCenter').fadeTo(1500, 0.0, function() {
 								document.getElementById('travelCenter').src = "./images/travelcenter.jpg";
 							});
-							$('#travelCenter').fadeTo(1000, 1);
-						}, 4000);
-					}, 4000);
-				}, 4000);
-			}, 4000);
-		}, 4000);
-	}, 4000);
+							$('#travelCenter').fadeTo(1500, 1);
+						}, 5000);
+					}, 5000);
+				}, 5000);
+			}, 5000);
+		}, 5000);
+	}, 5000);
 }
 
 function jokes() {
@@ -225,14 +225,18 @@ function normal() {
 }
 
 function weather() {
-	document.getElementById('weatherwidget-io').style.display = 'block';
+	$('#weatherwidget-io').fadeTo(1000, 1, function() {
+		document.getElementById('weatherwidget-io').style.display = "block";
+	});
 	
 	document.getElementById('weather').style.display = "none";
 	document.getElementById('noWeather').style.display = "initial";
 }
 
 function noWeather() {
-	document.getElementById('weatherwidget-io').style.display = "none";
+	$('#weatherwidget-io').fadeTo(1000, 0.0, function() {
+		document.getElementById('weatherwidget-io').style.display = "none";
+	});
 	
 	document.getElementById('weather').style.display = "initial";
 	document.getElementById('noWeather').style.display = "none";
@@ -246,7 +250,7 @@ function fadeIn() {
 $(document).ready(function() {
 	
 	imgChange();
-	setInterval(imgChange, 24000); 
+	setInterval(imgChange, 30000); 
 	
 	setInterval(footColor, 600);
 	

@@ -10,7 +10,7 @@
 		<script src="js/script.js"></script>
 	</head>
 	<body>
-		<div id="Top" class="Top"><img id="img" rel="logo" alt="images/logo.jpg" src="images/logo.png" onclick="window.open('https://rivercountrycoop.com/')" onmouseover="ovr(this);" onmouseout="out(this);"></div>
+		<div id="Top" class="Top" onmouseover="ovrTop(this);" onmouseout="outTop(this);"><img id="img" rel="logo" alt="images/logo.jpg" src="images/logo.png" onclick="window.open('https://rivercountrycoop.com/')" onmouseover="ovr(this);" onmouseout="out(this);"></div>
 		
 		<div id="Main" class="Main">
 			<h1 id="Head">Eau Claire Travel Center</h1>
@@ -28,7 +28,7 @@
 			</nav>
 			<hr>
 			<div id="weatherwidget-io"><a class="weatherwidget-io" href="https://forecast7.com/en/44d81n91d50/eau-claire/?unit=us" data-label_1="EAU CLAIRE" data-label_2="WEATHER" data-theme="original" >EAU CLAIRE WEATHER</a></div>
-			<img id="travelCenter" rel="TC" src="images/travelcenter.jpg">
+			<img id="travelCenter" rel="TC" src="images/travelcenter.jpg" onmouseover="ovrImg(this)" onmouseout="outImg(this)">
 		</div>
 			
 	</body>

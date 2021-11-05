@@ -6,6 +6,12 @@ var mseOutBody = elem => elem.style.backgroundColor = "wheat";
 var ovr = elem => elem.style.filter = "blur(3px) grayscale(0%)";
 var out = elem => elem.style.filter = "blur(.55px) grayscale(0%)";
 
+var ovrTop = elem => elem.style.borderColor = "red";
+var outTop = elem => elem.style.borderColor = "forestgreen";
+
+var ovrImg = elem => elem.style.filter = "grayscale(100%)";
+var outImg = elem => elem.style.filter = "grayscale(0%)";
+
 function footColor() {
 	document.getElementById('me').style.color = "red";
 	setTimeout(function() {
@@ -139,6 +145,12 @@ function anti() {
 	
 	ovr = elem => elem.style.filter = "blur(1px) grayscale(100%)";
 	out = elem => elem.style.filter = "blur(1px) grayscale(0%)";
+	
+	ovrTop = elem => elem.style.borderColor = "forestgreen";
+	outTop = elem => elem.style.borderColor = "red";
+	
+	ovrImg = elem => elem.style.filter = "grayscale(0%)";
+	outImg = elem => elem.style.filter = "grayscale(100%)";
 
 }
 
@@ -198,8 +210,15 @@ function normal() {
 	mseOverBody = elem => elem.style.backgroundColor = "red";
 	mseOut = elem => elem.style.color = "forestgreen";
 	mseOutBody = elem => elem.style.backgroundColor = "wheat";
+	
 	ovr = elem => elem.style.filter = "blur(3px) grayscale(0%)";
 	out = elem => elem.style.filter = "blur(.55px) grayscale(0%)";
+	
+	ovrTop = elem => elem.style.borderColor = "red";
+	outTop = elem => elem.style.borderColor = "forestgreen";
+	
+	ovrImg = elem => elem.style.filter = "grayscale(100%)";
+	outImg = elem => elem.style.filter = "grayscale(0%)";
 	
 }
 

@@ -27,7 +27,6 @@ body {
 }
 .Top:hover {
 	transition: .5s;
-	border-color: red !important;
 }
 .Top img {
 	filter: blur(.55px);
@@ -96,6 +95,9 @@ li {
 	box-shadow: 5px 5px 5px black;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+.Main img:hover {
+	transition: .5s;
 }
 footer p{
 	cursor: pointer;

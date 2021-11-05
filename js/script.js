@@ -74,8 +74,6 @@ function jokes() {
 }
 
 function anti() {
-	document.body.style.background = "linear-gradient(to bottom right, black, black, red, white, white)";
-	document.body.style.borderColor = "red";
 	
 	$('#Main').fadeTo(1000, 0.0, function() {
 		document.getElementById('Main').style.background = "linear-gradient(to bottom right, black, dimgray)";
@@ -114,11 +112,14 @@ function anti() {
 		document.getElementById('Top').style.filter = "blur(1.2px)";
 	});
 	$('.Top').fadeTo(1000, 1);
+	
+	setTimeout(function() {
+		document.body.style.background = "linear-gradient(to bottom right, black, black, red, white, white)";
+		document.body.style.borderColor = "red";
+	}, 1500);
 }
 
 function normal() {
-	document.body.style.background = "wheat";
-	document.body.style.borderColor = "wheat";
 	
 	$('#Main').fadeTo(1000, 0.0, function() {
 		document.getElementById('Main').style.background = "linear-gradient(to bottom right, forestgreen, white)";
@@ -158,6 +159,11 @@ function normal() {
 		document.getElementById('Top').style.filter = "blur(.8px)";
 	});
 	$('.Top').fadeTo(1000, 1);
+	
+	setTimeout(function() {
+		document.body.style.background = "wheat";
+		document.body.style.borderColor = "wheat";
+	}, 1500);
 }
 
 function weather() {

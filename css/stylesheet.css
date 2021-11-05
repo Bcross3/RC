@@ -5,6 +5,7 @@
 }
 body {
 	background: wheat;
+	background-repeat: none;
 	text-align: center;
 	border: solid;
 	border-width: thick;
@@ -22,6 +23,7 @@ body {
 	border: outset;
 	color: forestgreen;
 	box-shadow: 0px 5px 5px black;
+	opacity: 0;
 }
 .Top:hover {
 	transition: .5s;

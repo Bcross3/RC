@@ -45,12 +45,12 @@ function imgChange() {
 								document.getElementById('travelCenter').src = "./images/travelcenter.jpg";
 							});
 							$('#travelCenter').fadeTo(1000, 1);
-						}, 3000);
-					}, 3000);
-				}, 3000);
-			}, 3000);
-		}, 3000);
-	}, 3000);
+						}, 4000);
+					}, 4000);
+				}, 4000);
+			}, 4000);
+		}, 4000);
+	}, 4000);
 }
 
 function jokes() {
@@ -87,6 +87,7 @@ function anti() {
 		document.getElementById('weatherwidget-io').style.borderColor = "red";
 		
 		document.getElementById('travelCenter').style.borderColor = "red";
+		document.getElementById('travelCenter').style.boxShadow = "5px 5px 25px white";
 		
 		document.getElementById('anti').style.display = "none";
 		document.getElementById('normal').style.display = "initial";
@@ -96,6 +97,7 @@ function anti() {
 		for(i = 0; i < links.length; i++){
 			links[i].style.backgroundColor = "red";
 			links[i].style.color = "black";
+			links[i].style.boxShadow = "5px 5px 0px white";
 		}
 		
 		var hr = document.querySelectorAll('HR');
@@ -128,6 +130,7 @@ function normal() {
 		document.getElementById('weatherwidget-io').style.borderColor = "black";
 		
 		document.getElementById('travelCenter').style.borderColor = "black";
+		document.getElementById('travelCenter').style.boxShadow = "5px 5px 5px black";
 		
 		document.getElementById('anti').style.display = "initial";
 		document.getElementById('normal').style.display = "none";
@@ -137,6 +140,7 @@ function normal() {
 		for(i = 0; i < links.length; i++){
 			links[i].style.backgroundColor = "wheat";
 			links[i].style.color = "forestgreen";
+			links[i].style.boxShadow = "5px 5px 0px black";
 		}
 		
 		var hr = document.querySelectorAll('HR');
@@ -172,12 +176,13 @@ function noWeather() {
 
 function fadeIn() {
 	$('.Main').fadeTo(1000, 1);
+	$('.Top').fadeTo(1000, 1);
 }
 
 $(document).ready(function() {
 	
 	imgChange();
-	setInterval(imgChange, 18000); 
+	setInterval(imgChange, 24000); 
 	
 	setInterval(footColor, 600);
 	

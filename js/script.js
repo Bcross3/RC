@@ -1,5 +1,5 @@
-var mseOver = elem => elem.style.color = "red";
-var mseOverBody = elem => elem.style.backgroundColor = "black";
+var mseOver = elem => elem.style.color = "black";
+var mseOverBody = elem => elem.style.backgroundColor = "red";
 var mseOut = elem => elem.style.color = "forestgreen";
 var mseOutBody = elem => elem.style.backgroundColor = "wheat";
 
@@ -170,8 +170,8 @@ function normal() {
 	});
 	$('.Top').fadeTo(1000, 1);
 	
-	mseOver = elem => elem.style.color = "red";
-	mseOverBody = elem => elem.style.backgroundColor = "black";
+	mseOver = elem => elem.style.color = "black";
+	mseOverBody = elem => elem.style.backgroundColor = "red";
 	mseOut = elem => elem.style.color = "forestgreen";
 	mseOutBody = elem => elem.style.backgroundColor = "wheat";
 	

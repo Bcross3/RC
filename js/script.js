@@ -81,7 +81,7 @@ function jokes() {
 function anti() {
 	
 	$('#Main').fadeTo(1000, 0.0, function() {
-		document.getElementById('Main').style.background = "linear-gradient(to bottom right, black, dimgray)";
+		document.getElementById('Main').style.background = "linear-gradient(to bottom right, black, black, dimgray)";
 		document.getElementById('Main').style.borderColor = "red";
 		
 		document.getElementById('Head').style.color = "red";

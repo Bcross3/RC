@@ -91,6 +91,7 @@ function anti() {
 		
 		document.getElementById('travelCenter').style.borderColor = "red";
 		document.getElementById('travelCenter').style.boxShadow = "5px 5px 25px white";
+		document.getElementById('travelCenter').style.filter = "grayscale(100%)";
 		
 		document.getElementById('anti').style.display = "none";
 		document.getElementById('normal').style.display = "initial";
@@ -147,6 +148,7 @@ function normal() {
 		
 		document.getElementById('travelCenter').style.borderColor = "black";
 		document.getElementById('travelCenter').style.boxShadow = "5px 5px 5px black";
+		document.getElementById('travelCenter').style.filter = "grayscale(0%)";
 		
 		document.getElementById('anti').style.display = "initial";
 		document.getElementById('normal').style.display = "none";

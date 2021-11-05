@@ -3,6 +3,9 @@ var mseOverBody = elem => elem.style.backgroundColor = "red";
 var mseOut = elem => elem.style.color = "forestgreen";
 var mseOutBody = elem => elem.style.backgroundColor = "wheat";
 
+var ovr = elem => elem.style.filter = "blur(3px) grayscale(0%)";
+var out = elem => elem.style.filter = "blur(.55px) grayscale(0%)";
+
 function footColor() {
 	document.getElementById('me').style.color = "red";
 	setTimeout(function() {
@@ -88,6 +91,7 @@ function anti() {
 		document.getElementById('Head').style.textShadow = "5px 5px 5px gray";
 		
 		document.getElementById('weatherwidget-io').style.borderColor = "red";
+		document.getElementsByClassName('weatherwidget-io')[0].style.filter = "grayscale(100%) brightness(75%) saturate(0)";
 		
 		document.getElementById('travelCenter').style.borderColor = "red";
 		document.getElementById('travelCenter').style.boxShadow = "5px 5px 25px white";
@@ -132,6 +136,9 @@ function anti() {
 	mseOverBody = elem => elem.style.backgroundColor = "wheat";
 	mseOut = elem => elem.style.color = "black";
 	mseOutBody = elem => elem.style.backgroundColor = "red";
+	
+	ovr = elem => elem.style.filter = "blur(1px) grayscale(100%)";
+	out = elem => elem.style.filter = "blur(1px) grayscale(0%)";
 
 }
 
@@ -145,6 +152,7 @@ function normal() {
 		document.getElementById('Head').style.textShadow = "5px 5px 5px black";
 		
 		document.getElementById('weatherwidget-io').style.borderColor = "black";
+		document.getElementsByClassName('weatherwidget-io')[0].style.filter = "grayscale(0%) brightness(100%) saturate(1)";
 		
 		document.getElementById('travelCenter').style.borderColor = "black";
 		document.getElementById('travelCenter').style.boxShadow = "5px 5px 5px black";
@@ -190,6 +198,8 @@ function normal() {
 	mseOverBody = elem => elem.style.backgroundColor = "red";
 	mseOut = elem => elem.style.color = "forestgreen";
 	mseOutBody = elem => elem.style.backgroundColor = "wheat";
+	ovr = elem => elem.style.filter = "blur(3px) grayscale(0%)";
+	out = elem => elem.style.filter = "blur(.55px) grayscale(0%)";
 	
 }
 

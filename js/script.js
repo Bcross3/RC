@@ -74,7 +74,7 @@ function jokes() {
 }
 
 function anti() {
-	document.body.style.backgroundColor = "white";
+	document.body.style.background = "linear-gradient(to bottom right, black, black, red, white, white)";
 	document.body.style.borderColor = "red";
 	
 	$('#Main').fadeTo(1000, 0.0, function() {
@@ -114,7 +114,7 @@ function anti() {
 }
 
 function normal() {
-	document.body.style.backgroundColor = "wheat";
+	document.body.style.background = "wheat";
 	document.body.style.borderColor = "wheat";
 	
 	$('#Main').fadeTo(1000, 0.0, function() {

@@ -116,7 +116,8 @@ function anti() {
 	$('.Top').fadeTo(1000, 0.0, function() {
 		document.getElementById('Top').style.backgroundColor = "black";
 		document.getElementById('Top').style.borderColor = "red";
-		document.getElementById('Top').style.filter = "blur(1px) grayscale(100%)";
+		document.getElementById('Top').style.filter = "blur(1px)";
+		document.getElementById('img').src = "./images/logo1.png";
 	});
 	$('.Top').fadeTo(1000, 1);
 	
@@ -171,7 +172,8 @@ function normal() {
 	$('.Top').fadeTo(1000, 0.0, function() {
 		document.getElementById('Top').style.backgroundColor = "white";
 		document.getElementById('Top').style.borderColor = "forestgreen";
-		document.getElementById('Top').style.filter = "blur(.55px) grayscale(0)";
+		document.getElementById('Top').style.filter = "blur(.55px)";
+		document.getElementById('img').src = "./images/logo.png";
 	});
 	$('.Top').fadeTo(1000, 1);
 	

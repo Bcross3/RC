@@ -78,11 +78,11 @@ function anti() {
 	document.body.style.borderColor = "red";
 	
 	$('#Main').fadeTo(1000, 0.0, function() {
-		document.getElementById('Main').style.background = "black";
+		document.getElementById('Main').style.background = "linear-gradient(to bottom right, black, dimgray)";
 		document.getElementById('Main').style.borderColor = "red";
 		
 		document.getElementById('Head').style.color = "red";
-		document.getElementById('Head').style.textShadow = "2.5px 2.5px 25px white";
+		document.getElementById('Head').style.textShadow = "5px 5px 5px gray";
 		
 		document.getElementById('weatherwidget-io').style.borderColor = "red";
 		

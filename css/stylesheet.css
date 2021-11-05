@@ -28,7 +28,7 @@ body {
 }
 .Top:hover {
 	transition: .5s;
-	border-color: red;
+	border-color: red !important;
 	filter: blur(2px);;
 }
 
@@ -82,9 +82,9 @@ li {
 	box-shadow: 5px 5px 0px black;
 }
 .link:hover {
-	transition: .2s;
-	color: red;
-	background-color: black;
+	transition: .2s !important;
+	color: red !important;
+	background-color: black !important;
 }
 .Main img{
 	margin-top: 2%;

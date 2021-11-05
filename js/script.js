@@ -112,7 +112,7 @@ function anti() {
 	$('.Top').fadeTo(1000, 0.0, function() {
 		document.getElementById('Top').style.backgroundColor = "black";
 		document.getElementById('Top').style.borderColor = "red";
-		document.getElementById('Top').style.filter = "blur(1.2px)";
+		document.getElementById('Top').style.filter = "blur(1px)";
 	});
 	$('.Top').fadeTo(1000, 1);
 

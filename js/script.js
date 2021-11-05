@@ -53,16 +53,30 @@ function imgChange() {
 	}, 3000);
 }
 
-function loadIn() {
-	$('.Main').fadeIn(1000, 1);
+function jokes() {
+	var joke = new Array();
+	
+	joke[0] = "What do you call a boomerang that won't come back?\nA stick.";
+	joke[1] = "What does a cloud wear under his raincoat?\nThunderwear.";
+	joke[2] = "Two pickles fell out of a jar onto the floor. What did one say to the other?\nDill with it.";
+	joke[3] = "What time is it when the clock strikes 13?\nTime to get a new clock.";
+	joke[4] = "How does a cucumber become a pickle?\nIt goes through a jarring experience.";
+	joke[5] = "What did one toilet say to the other?\nYou look a bit flushed.";
+	joke[6] = "What do you call a joke that isn't funny?\nA sentence.";
+	joke[7] = "What did one stranger say to the other?\nNothing. They didn't know each other.";
+	joke[8] = "What did one Frenchman say to the other Frenchman?\nI don't know; I don't speak French.";
+	joke[9] = "Why did the swan hiss?\nBiologically, it's coded in their genes to do so when threatened.";
+	joke[10] = "What do you call a pigeon that can't find its way back home?\nA pigeon.";
+	joke[11] = "What's the best thing about Switzerland?\nI don't know, but the flag is a big plus.";
+	
+	index = Math.floor(Math.random() * joke.length);
+	window.alert(joke[index]);
 }
 
 $(document).ready(function() {
-	window.alert("Links don't function on this site.");
 	
 	imgChange();
 	setInterval(imgChange, 18000); 
 	
 	setInterval(footColor, 600);
-	loadIn();
 });

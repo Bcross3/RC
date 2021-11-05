@@ -90,6 +90,9 @@ function anti() {
 		document.getElementById('anti').style.display = "none";
 		document.getElementById('normal').style.display = "initial";
 		
+		document.body.style.background = "linear-gradient(to bottom right, black, black, red, white, white)";
+		document.body.style.borderColor = "red";
+		
 		var links = document.querySelectorAll('.link');
 		var i;
 		for(i = 0; i < links.length; i++){
@@ -112,11 +115,7 @@ function anti() {
 		document.getElementById('Top').style.filter = "blur(1.2px)";
 	});
 	$('.Top').fadeTo(1000, 1);
-	
-	setTimeout(function() {
-		document.body.style.background = "linear-gradient(to bottom right, black, black, red, white, white)";
-		document.body.style.borderColor = "red";
-	}, 1500);
+
 }
 
 function normal() {
@@ -135,6 +134,9 @@ function normal() {
 		
 		document.getElementById('anti').style.display = "initial";
 		document.getElementById('normal').style.display = "none";
+		
+		document.body.style.background = "wheat";
+		document.body.style.borderColor = "wheat";
 		
 		var links = document.querySelectorAll('.link');
 		var i;
@@ -156,14 +158,10 @@ function normal() {
 	$('.Top').fadeTo(1000, 0.0, function() {
 		document.getElementById('Top').style.backgroundColor = "white";
 		document.getElementById('Top').style.borderColor = "forestgreen";
-		document.getElementById('Top').style.filter = "blur(.8px)";
+		document.getElementById('Top').style.filter = "blur(.55px)";
 	});
 	$('.Top').fadeTo(1000, 1);
 	
-	setTimeout(function() {
-		document.body.style.background = "wheat";
-		document.body.style.borderColor = "wheat";
-	}, 1500);
 }
 
 function weather() {

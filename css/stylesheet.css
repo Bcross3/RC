@@ -30,7 +30,7 @@ body {
 	border-color: red !important;
 }
 .Top img {
-	filter: blue(.8px);
+	filter: blur(.55px);
 	cursor: pointer;
 }
 .Top img:hover {

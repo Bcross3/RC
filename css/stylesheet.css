@@ -103,8 +103,8 @@ li {
 }
 footer p{
 	cursor: pointer;
-	background-color: white;
-	color: black;
+	background-color: black;
+	color: white;
 	border: solid;
 	position: fixed;
 	bottom: 0;

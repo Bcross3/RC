@@ -3,8 +3,8 @@ var mseOverBody = elem => elem.style.backgroundColor = "red";
 var mseOut = elem => elem.style.color = "forestgreen";
 var mseOutBody = elem => elem.style.backgroundColor = "wheat";
 
-var ovr = elem => elem.style.filter = "blur(3px) grayscale(0%)";
-var out = elem => elem.style.filter = "blur(.55px) grayscale(0%)";
+var ovr = elem => elem.src = "./images/logo1.png";
+var out = elem => elem.src = "./images/logo.png";
 
 var ovrTop = elem => elem.style.borderColor = "red";
 var outTop = elem => elem.style.borderColor = "forestgreen";
@@ -129,12 +129,13 @@ function anti() {
 		document.getElementById('Top').style.backgroundColor = "black";
 		document.getElementById('Top').style.borderColor = "red";
 		document.getElementById('Top').style.filter = "blur(1px)";
-		document.getElementById('img').src = "./images/logo1.png";
+		document.getElementById('imgOriginal').style.display = "none";
+		document.getElementById('imgAnti').style.display = "initial";
 	});
 	$('.Top').fadeTo(1000, 1);
 	
 	$('#me').fadeTo(1000, 0.0, function() {
-		document.getElementById('me').style.backgroundColor = "black";
+		document.getElementById('me').style.filter = "grayscale(100%)";
 	})
 	$('#me').fadeTo(1000, 1);
 	
@@ -143,8 +144,8 @@ function anti() {
 	mseOut = elem => elem.style.color = "black";
 	mseOutBody = elem => elem.style.backgroundColor = "red";
 	
-	ovr = elem => elem.style.filter = "blur(1px) grayscale(100%)";
-	out = elem => elem.style.filter = "blur(1px) grayscale(0%)";
+	ovr = elem => elem.src = "./images/logo.png";
+	out = elem => elem.src = "./images/logo1.png";
 	
 	ovrTop = elem => elem.style.borderColor = "forestgreen";
 	outTop = elem => elem.style.borderColor = "red";
@@ -197,12 +198,13 @@ function normal() {
 		document.getElementById('Top').style.backgroundColor = "white";
 		document.getElementById('Top').style.borderColor = "forestgreen";
 		document.getElementById('Top').style.filter = "blur(.55px)";
-		document.getElementById('img').src = "./images/logo.png";
+		document.getElementById('imgOriginal').style.display = "initial";
+		document.getElementById('imgAnti').style.display = "none";
 	});
 	$('.Top').fadeTo(1000, 1);
 	
 	$('#me').fadeTo(1000, 0.0, function() {
-		document.getElementById('me').style.backgroundColor = "white";
+		document.getElementById('me').style.filter = "grayscale(0%)";
 	});
 	$('#me').fadeTo(1000, 1);
 	
@@ -211,8 +213,8 @@ function normal() {
 	mseOut = elem => elem.style.color = "forestgreen";
 	mseOutBody = elem => elem.style.backgroundColor = "wheat";
 	
-	ovr = elem => elem.style.filter = "blur(3px) grayscale(0%)";
-	out = elem => elem.style.filter = "blur(.55px) grayscale(0%)";
+	ovr = elem => elem.src = "./images/logo1.png";
+	out = elem => elem.src = "./images/logo.png";
 	
 	ovrTop = elem => elem.style.borderColor = "red";
 	outTop = elem => elem.style.borderColor = "forestgreen";

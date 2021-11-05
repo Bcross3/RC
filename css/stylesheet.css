@@ -34,7 +34,6 @@ body {
 }
 .Top img:hover {
 	transition: .5s;
-	/*filter: blur(3px) grayscale(100%) !important;*/
 }
 
 .Main {
@@ -85,6 +84,9 @@ li {
 	font-size: 1.5em;
 	font-family: georgia;
 	box-shadow: 5px 5px 0px black;
+}
+.link:hover {
+	transition: .5s;
 }
 .Main img{
 	margin-top: 2%;

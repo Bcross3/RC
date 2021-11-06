@@ -128,7 +128,7 @@ footer p{
 		margin-bottom: 0;
 		height: auto;
 		width: auto;
-box-shadow:0;
+box-shadow:0px 0px 0px black;
 	}
 	#Main img {
 		height: 200px;

@@ -186,7 +186,7 @@ function normal() {
 		for(i = 0; i < links.length; i++){
 			links[i].style.backgroundColor = "wheat";
 			links[i].style.color = "forestgreen";
-			links[i].style.boxShadow = "5px 5px 0px dimgray";
+			links[i].style.boxShadow = "5px 5px 0px black";
 		}
 		
 		var hr = document.querySelectorAll('HR');

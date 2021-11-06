@@ -119,3 +119,67 @@ footer p{
 	border-color: black;
 	border-radius: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+	#Main {
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 2%;
+		margin-bottom: 0;
+		height: auto;
+		width: auto;
+	}
+	#Main img {
+		height: 200px;
+		width: 300px;
+		margin-top: 10%;
+	}
+	#Main h1 {
+		margin-bottom: 5%;
+	}
+	nav {
+		word-spacing: 10px;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	#link {
+		font-size: .8em;
+	}
+	.Top {
+		display: none !important;
+	}
+	#mobileLogo {
+		display: initial !important;
+		height: 100px !important;
+		width: 300px !important;
+		filter: blur(.55px);
+		cursor: pointer;
+		background-color: white;
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+	#Main {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#Main h1 {
+		margin-bottom: 5%;
+	}
+	nav {
+		word-spacing: 15px;
+	}
+	#Top {
+		display: none !important;
+	}
+	#mobileLogo {
+		display: initial !important;
+		height: 200px !important;
+		width: 500px !important;
+		filter: blur(.55px);
+		cursor: pointer;
+		background-color: white;
+		margin-bottom: 0;
+	}
+	
+}

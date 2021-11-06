@@ -131,6 +131,10 @@ function anti() {
 		document.getElementById('Top').style.filter = "blur(1px)";
 		document.getElementById('imgOriginal').style.display = "none";
 		document.getElementById('imgAnti').style.display = "initial";
+		
+		document.getElementById('mobileLogo').src = "images/logo1.png";
+		document.getElementById('mobileLogo').style.backgroundColor = "black";
+		document.getElementById('mobileLogo').style.borderColor = "red";
 	});
 	$('.Top').fadeTo(1000, 1);
 	
@@ -200,6 +204,10 @@ function normal() {
 		document.getElementById('Top').style.filter = "blur(.55px)";
 		document.getElementById('imgOriginal').style.display = "initial";
 		document.getElementById('imgAnti').style.display = "none";
+		
+		document.getElementById('mobileLogo').src = "images/logo.png";
+		document.getElementById('mobileLogo').style.backgroundColor = "white";
+		document.getElementById('mobileLogo').style.borderColor = "black";
 	});
 	$('.Top').fadeTo(1000, 1);
 	

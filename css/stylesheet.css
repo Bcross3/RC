@@ -20,7 +20,8 @@ body {
 	margin-left: .5%;
 	margin-right: .5%;
 	margin-top: .2%;
-	padding-bottom: 1%;
+	padding-top: .5%;
+	padding-bottom: .5%;
 	border: outset;
 	color: forestgreen;
 	box-shadow: 0px 5px 5px black;
@@ -123,10 +124,7 @@ footer p{
 
 @media only screen and (max-width: 600px) {
 	#Main {
-		margin-left: 2%;
-		margin-right: 2%;
-		margin-top: 1%;
-		margin-bottom: 0;
+		margin: 0;
 		height: auto;
 		width: auto;
 		box-shadow: none;
@@ -139,7 +137,9 @@ footer p{
 	}
 	#Main h1 {
 		margin-top: 0;
-		margin-bottom: 5%;
+		margin-bottom: 0;
+		position: relative;
+		top: -55px;
 	}
 	nav {
 		word-spacing: 15px;
@@ -162,6 +162,9 @@ footer p{
 		filter: blur(.55px);
 		cursor: pointer;
 		background-color: white;
+		position: relative;
+		top: -50px;
+		left: 0;
 	}
 	footer p {
 		bottom: 0;
@@ -169,7 +172,7 @@ footer p{
 	}
 }
 
-@media only screen and (min-width: 800px) and (max-width: 900px) {
+@media only screen and (min-width: 800px) and (max-width: 915px) {
 	#Main {
 		margin-left: 5%;
 		margin-right: 5%;

@@ -172,13 +172,17 @@ footer p{
 	}
 }
 
-@media only screen and (min-width: 700px) and (max-width: 915px) {
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
 	#Main {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
 	#Main h1 {
 		margin-bottom: 5%;
+	}
+	#Main img {
+		height: 400px;
+		width: 600px;
 	}
 	nav {
 		word-spacing: 15px;

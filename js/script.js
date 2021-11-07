@@ -135,6 +135,7 @@ function anti() {
 		document.getElementById('mobileLogo').src = "images/logo1.png";
 		document.getElementById('mobileLogo').style.backgroundColor = "black";
 		document.getElementById('mobileLogo').style.borderColor = "red";
+		document.getElementById('mobileLogo').style.filter = "blur(1px)";
 	});
 	$('.Top').fadeTo(1000, 1);
 	
@@ -208,6 +209,7 @@ function normal() {
 		document.getElementById('mobileLogo').src = "images/logo.png";
 		document.getElementById('mobileLogo').style.backgroundColor = "white";
 		document.getElementById('mobileLogo').style.borderColor = "black";
+		document.getElementById('mobileLogo').style.filter = "blur(.55px)";
 	});
 	$('.Top').fadeTo(1000, 1);
 	

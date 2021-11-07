@@ -21,7 +21,7 @@ body {
 	margin-right: .5%;
 	margin-top: .2%;
 	padding-top: .5%;
-	padding-bottom: .5%;
+	padding-bottom: 0;
 	border: outset;
 	color: forestgreen;
 	box-shadow: 0px 5px 5px black;
@@ -124,7 +124,7 @@ footer p{
 
 @media only screen and (max-width: 400px) {
 	#Main {
-		margin: 0;
+		margin: 0%;
 		height: auto;
 		width: auto;
 		box-shadow: none;
@@ -132,16 +132,17 @@ footer p{
 	}
 	#Main img {
 		height: 200px;
-		width: 250px;
-		margin-top: 20%;
-		margin-bottom: 10%;
+		width: 300px;
+		margin-top: 5%;
+		margin-bottom: 5%;
 		box-shadow: 0px 0px black;
 	}
 	#Main h1 {
-		margin-top: 0;
-		margin-bottom: 0;
+		margin-top: 0%;
+		margin-bottom: 5%;
 		position: relative;
-		top: -55px;
+		top: 0px;
+		font-size: 1.8em;
 	}
 	nav {
 		word-spacing: 15px;
@@ -151,8 +152,9 @@ footer p{
 	#weather {
 		display: none !important;
 	}
-	#link {
-		font-size: .8em;
+	.link {
+		font-size: 1em;
+		box-shadow: 5px 5px 5px black !important;
 	}
 	.Top {
 		display: none !important;
@@ -165,9 +167,12 @@ footer p{
 		cursor: pointer;
 		background-color: white;
 		position: relative;
-		top: -50px;
+		top: 0px;
 		left: 0;
 		box-shadow: 0px 0px black;
+	}
+	footer p {
+		font-size: .6em;
 	}
 }
 
@@ -182,14 +187,18 @@ footer p{
 	#Main img {
 		height: 200px;
 		width: 300px;
-		margin-top: 20%;
+		margin-bottom: 5%;
+	}
+	#travelCenter {
+		margin-top: 5%;
 		margin-bottom: 10%;
 	}
 	#Main h1 {
 		margin-top: 0;
-		margin-bottom: 0;
+		margin-bottom: 2%;
 		position: relative;
-		top: -55px;
+		top: 0px;
+		font-size: 2em;
 	}
 	nav {
 		word-spacing: 15px;
@@ -199,8 +208,9 @@ footer p{
 	#weather {
 		display: none !important;
 	}
-	#link {
-		font-size: .8em;
+	.link {
+		font-size: 1.2em;
+		box-shadow: 5px 5px 5px black !important;
 	}
 	.Top {
 		display: none !important;
@@ -213,8 +223,10 @@ footer p{
 		cursor: pointer;
 		background-color: white;
 		position: relative;
-		top: -50px;
-		left: 0;
+		top: 0px;
+	}
+	footer p {
+		font-size: .6em;
 	}
 }
 
@@ -240,7 +252,12 @@ footer p{
 	}
 	#Main {
 		margin-left: 5%;
-		margin-right: 5%;;
+		margin-right: 5%;
+		box-shadow: 0px 0px black;
+	}
+	.link {
+		font-size: 1.2em;
+		box-shadow: 5px 5px 5px black !important;
 	}
 }
 

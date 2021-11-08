@@ -22,11 +22,10 @@
 
                 $wrapper.css({
                     'overflow': 'hidden',
-                    'height': '100%',
+                    'height': '80%',
                     'width': '100%',
                     'top': '0',
                     'left': '0',
-					'zIndex': '1'
                 });
             }
 

@@ -82,6 +82,8 @@ function anti() {
 	
 	ovrImg = elem => elem.style.filter = "grayscale(0%)";
 	outImg = elem => elem.style.filter = "grayscale(100%)";
+	
+	document.getElementById('christmasBTN').style.display = "none";
 
 }
 
@@ -156,6 +158,8 @@ function normal() {
 	
 	ovrImg = elem => elem.style.filter = "grayscale(100%)";
 	outImg = elem => elem.style.filter = "grayscale(0%)";
+	
+	document.getElementById('christmasBTN').style.display = "initial";
 	
 }
 

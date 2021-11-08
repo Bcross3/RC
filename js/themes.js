@@ -188,7 +188,7 @@ function christmas() {
 	
 	document.getElementById('Top').style.borderColor = "white";
 	
-	if(window.innerWidth >= '601'){
+	if(window.innerWidth >= '800'){
 		$.snowfall.start();
 	}else{
 		window.alert('Use desktop display for snow');

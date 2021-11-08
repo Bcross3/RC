@@ -174,9 +174,6 @@ footer p{
 	footer p {
 		font-size: .6em;
 	}
-	#snowfall-wrapper {
-		height: 30% !important;
-	}
 }
 
 @media only screen and (min-width: 401px) and (max-width: 600px) {
@@ -230,9 +227,6 @@ footer p{
 	}
 	footer p {
 		font-size: .6em;
-	}
-	#snowfall-wrapper {
-		height: 30% !important;
 	}
 }
 

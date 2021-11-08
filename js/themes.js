@@ -159,6 +159,7 @@ function normal() {
 	
 	document.getElementById('christmasBTN').style.display = "initial";
 	document.getElementById('noChristmas').style.display = "hidden";
+	$.snowfall.stop();
 	
 }
 

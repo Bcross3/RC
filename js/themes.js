@@ -157,10 +157,6 @@ function normal() {
 	ovrImg = elem => elem.style.filter = "grayscale(100%)";
 	outImg = elem => elem.style.filter = "grayscale(0%)";
 	
-	document.getElementById('christmasBTN').style.display = "initial";
-	document.getElementById('noChristmas').style.display = "hidden";
-	$.snowfall.stop();
-	
 }
 
 function christmas() {
@@ -196,8 +192,7 @@ function christmas() {
 	
 	document.getElementById('anti').style.display = "none";
 	
-	document.getElementById('christmasBTN').style.display = "hidden";
-	document.getElementById('noChristmas').style.display = "initial";
+	document.getElementById('christmasBTN').style.display = "none";
 }
 
 $(document).ready(function() {

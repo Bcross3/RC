@@ -92,8 +92,8 @@ function noWeather() {
 }
 
 function fadeIn() {
-	$('.Main').fadeTo(1000, 1);
-	$('.Top').fadeTo(1000, 1);
+	$('.Main').fadeTo(500, 1);
+	$('.Top').fadeTo(500, 1);
 }
 
 $(document).ready(function() {

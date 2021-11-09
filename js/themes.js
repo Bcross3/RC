@@ -289,6 +289,15 @@ function thanksgiving() {
 	mseOverBody = elem => elem.style.background = "red";
 	mseOut = elem => elem.style.color = "white";
 	mseOutBody = elem => elem.style.background = "linear-gradient(#8A9748, #B54730, #F1B930, #9E682A, #6C2F00)";
+	
+	ovr = elem => elem.src = "./images/logo1.png";
+	out = elem => elem.src = "./images/logo.png";
+	
+	ovrTop = elem => elem.style.borderColor = "red";
+	outTop = elem => elem.style.borderColor = "forestgreen";
+	
+	ovrImg = elem => elem.style.filter = "grayscale(100%)";
+	outImg = elem => elem.style.filter = "grayscale(0%)";
 }
 
 $(document).ready(function() {

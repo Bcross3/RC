@@ -21,8 +21,6 @@ function themePicker() {
 	
 	if(currentM == 'December' && date == '25'){
 		christmas();
-	}else if(currentM == 'November'){
-		thanksgiving();
 	}else{
 		normal();
 	}
